@@ -1,0 +1,6 @@
+#Exclude all build fildes
+/build/
+# Exclude all .exec files
+*.exec
+# Exclude all .exe files
+*.exe
