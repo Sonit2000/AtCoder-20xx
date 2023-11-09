@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include <string>
+#include <math.h>
 #include <vector>
 typedef long long ll;
 typedef unsigned long long ull;
@@ -75,8 +76,13 @@ int main()
   cin.tie(0);
   cout.tie(0);
   ios_base::sync_with_stdio(0);
-  const uint64_t deBruijn = 0X022fdd63cc95386d;
-  const int convert[64] = {0, 1, 2, 53, 3, 7, 54, 27, 4, , 38, 41, 8, 32, 55, 48, 28, 62, 5, 39, 46};
-  cout << convert[(x * deBruijn) >> 58] << endl;
+  // const uint64_t deBruijn = 0X022fdd63cc95386d;
+  // const int convert[64] = {0, 1, 2, 53, 3, 7, 54, 27, 4, , 38, 41, 8, 32, 55, 48, 28, 62, 5, 39, 46};
+  // cout << convert[(x * deBruijn) >> 58] << endl;
+  double x, k;
+  cin >> x;
+  cin >> k;
+  double f = double(1 << log((1 << x) + (1 << k) * k) + (1 << cos(x)));
+  cout << f << fixed << endl;
   return 0;
 }
