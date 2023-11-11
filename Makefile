@@ -1,4 +1,5 @@
-run: 
+run:
+	make buddha
 	g++ -o sol sol.cpp
 	./sol < sol.in
 buddha:
